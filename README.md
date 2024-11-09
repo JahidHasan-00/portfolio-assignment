@@ -1,5 +1,5 @@
 # Portfolio-Website
-<P>Welcome to my personal portfolio project. This project showcases my skills, projects, and professional profile</P>
+<P>Welcome to portfolio project. This project showcases my skills, projects, and professional profile</P>
 
 <h2>Live Project</h2>
 <p>Access the live project here: <a href= 'https://jahidhasan-00.github.io/portfolio-assignment/'>Portfolio Assignment</a></p>
