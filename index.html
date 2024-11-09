@@ -8,25 +8,242 @@
     <link rel="stylesheet" href="./assets/style.css">
     <!-- <script src="https://cdn.tailwindcss.com"></script> -->
 </head>
-<body class="font-sans">
-    <header>
-        <nav>
-            <h1>Daryl <span>Smith</span><br><span>UI/UX designer</span></h1>
-            <ul>
-                <li><a href=""><svg class="p-2 bg-gradient-to-r from-[#F5BD4D] to-[#F89222]" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                    <path d="M20.7465 11.1254L16.4956 7.03282V3.77565C16.4956 3.35608 16.1497 3.01012 15.7301 3.01012C15.3105 3.01012 14.9646 3.35608 14.9646 3.77565V5.56065L12.5134 3.2015C12.2447 2.93283 11.7847 2.93283 11.4792 3.2015L3.2498 11.1254C2.94432 11.4309 2.90384 11.891 3.21299 12.1964C3.52215 12.5019 3.97852 12.5424 4.28399 12.2332L4.39809 12.1228V20.2345C4.39809 20.654 4.74405 21 5.16361 21H18.8695C19.2891 21 19.5982 20.654 19.635 20.2713V12.2001L19.7123 12.2737C20.2717 12.6602 20.6692 12.3878 20.7833 12.1964C21.052 11.891 21.052 11.3941 20.7465 11.1254ZM13.3562 19.5094H10.6769V15.4131H13.3562V19.5094ZM18.104 19.5094H14.8505V14.6476C14.8505 14.228 14.5045 13.8821 14.0849 13.8821H9.91135C9.49178 13.8821 9.14582 14.228 9.14582 14.6476V19.5094H5.92914V12.0051H18.104V19.5094ZM6.07636 10.5145L12.0166 4.80984L17.8979 10.5145H6.07636Z" fill="white"/>
-                  </svg></a></li>
-                <li><a href="">Home</a></li>
-            </ul>
-        </nav>
-    </header>
+<body class="font-sans font-bold">
+    <div class="bg-[#171B1A] w-[1320px] mx-auto text-white">
+        <header class="container">
+            <!-- Header -->
+            <div class="flex items-center sticky top-0 px-20 bg-primary">
+                <h1 class="flex-grow-[0.27] text-3xl font-bold">Daryl <span class="bg-gradient-to-r from-[#F5BD4D] to-[#F89222] bg-clip-text text-transparent">Smith</span><br><span class="text-gray-400 text-base font-normal">UI/UX designer</span></h1>
+                 <hr class="bg-[#353535]  w-0.5 h-24">
+                <div class="flex flex-1 items-center justify-between">
+                    <ul class="flex items-center ">
+                        <li class="flex justify-center rounded-md items-center ml-10 mr-4 w-10 h-10 bg-gradient-to-r from-[#F5BD4D] to-[#F89222]"><a href=""><svg class="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M20.7465 11.1254L16.4956 7.03282V3.77565C16.4956 3.35608 16.1497 3.01012 15.7301 3.01012C15.3105 3.01012 14.9646 3.35608 14.9646 3.77565V5.56065L12.5134 3.2015C12.2447 2.93283 11.7847 2.93283 11.4792 3.2015L3.2498 11.1254C2.94432 11.4309 2.90384 11.891 3.21299 12.1964C3.52215 12.5019 3.97852 12.5424 4.28399 12.2332L4.39809 12.1228V20.2345C4.39809 20.654 4.74405 21 5.16361 21H18.8695C19.2891 21 19.5982 20.654 19.635 20.2713V12.2001L19.7123 12.2737C20.2717 12.6602 20.6692 12.3878 20.7833 12.1964C21.052 11.891 21.052 11.3941 20.7465 11.1254ZM13.3562 19.5094H10.6769V15.4131H13.3562V19.5094ZM18.104 19.5094H14.8505V14.6476C14.8505 14.228 14.5045 13.8821 14.0849 13.8821H9.91135C9.49178 13.8821 9.14582 14.228 9.14582 14.6476V19.5094H5.92914V12.0051H18.104V19.5094ZM6.07636 10.5145L12.0166 4.80984L17.8979 10.5145H6.07636Z" fill="white"/>
+                          </svg></a></li>
+                        <li class="text-2xl font-bold"><a href="">Home</a></li>
+                    </ul>
+                    <button class="border border-solid border-amber-500 bg-gradient-to-r from-[#F5BD4D] to-[#F89222] bg-clip-text text-transparent rounded-full py-3 px-6">Talk To Me</button>
+                </div>
+            </div>
+        <!--Navbar part -->
+        <nav class="flex justify-between items-center ">
+            <div class="flex flex-col justify-between h-96  items-center  px-7">
+                <a href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none"><path d="M27.66 14.83 22 9.38V5.03c0-.56-.46-1.02-1.02-1.02s-1.02.46-1.02 1.02v2.38l-3.27-3.14c-.35-.36-.97-.36-1.37 0L4.33 14.83c-.4.41-.46 1.02-.05 1.43.42.4 1.02.46 1.43.05l.15-.15v10.82c0 .56.47 1.02 1.02 1.02h18.28c.56 0 .97-.46 1.02-.97V16.27l.1.1c.75.51 1.28.15 1.43-.1.36-.42.36-1.08-.05-1.44Zm-9.85 11.18h-3.57v-5.46h3.57v5.46Zm6.33 0H19.8v-6.48c0-.56-.46-1.02-1.02-1.02h-5.56c-.56 0-1.03.46-1.03 1.02v6.48H7.91v-10h16.23v10Zm-16.04-12 7.92-7.6 7.84 7.6H8.1Z" fill="url(#a)"/><defs><linearGradient id="a" x1="4" y1="10.6572" x2="27.9778" y2="10.5366" gradientUnits="userSpaceOnUse"><stop stop-color="#F5BD4D"/><stop offset="1" stop-color="#F89222"/></linearGradient></defs></svg>
+                </a>
+                <a href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none"><path d="M16 16a6.5 6.5 0 1 0 0-13 6.5 6.5 0 0 0 0 13Zm0-11.14a4.64 4.64 0 1 1 0 9.28 4.64 4.64 0 0 1 0-9.28ZM16.93 17.86h-1.86A10.21 10.21 0 0 0 4.86 28.07a.93.93 0 0 0 .93.93H26.2a.93.93 0 0 0 .93-.93 10.21 10.21 0 0 0-10.21-10.21ZM6.77 27.14a8.36 8.36 0 0 1 8.3-7.43h1.86a8.36 8.36 0 0 1 8.3 7.43H6.77Z" fill="#646464"/></svg>
+                </a>
+                <a href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M12.2 4.08c-.59.17-1.1.7-1.26 1.29-.11.4-.1 1.25 0 1.46.15.3.53.4.83.25.27-.14.3-.23.34-.84.03-.61.09-.77.31-.89.2-.1 6.78-.1 6.98 0 .22.12.28.28.31.89.04.61.08.7.34.84.3.15.68.04.83-.25.11-.2.11-1.06 0-1.47a1.86 1.86 0 0 0-1.28-1.28c-.41-.1-7-.1-7.4 0ZM3.6 8.46c-.63.1-1.16.5-1.43 1.08l-.15.3-.01 2.36c-.02 2.26-.01 2.38.1 2.73.13.47.55.95.98 1.13.19.09 10.07 2.35 10.24 2.35l.04 1.12c.02 1.24.03 1.3.35 1.46.25.12 4.13.12 4.38 0 .32-.15.34-.22.36-1.46 0-.62.02-1.12.03-1.12.17 0 10.05-2.26 10.25-2.35.42-.18.84-.66.98-1.13.1-.35.11-.47.1-2.73l-.02-2.35-.15-.32c-.2-.41-.6-.81-1-.97l-.32-.13H16.1c-6.73 0-12.35 0-12.5.03Zm24.7 1.36c.1.06.19.2.22.31.08.3.07 4.23-.02 4.47a.69.69 0 0 1-.2.28c-.09.07-1.78.47-4.97 1.18l-4.84 1.08-.04-.33c-.05-.45-.13-.61-.34-.71-.27-.13-4.13-.13-4.4 0-.21.1-.29.26-.34.71l-.04.33-4.84-1.08a79.9 79.9 0 0 1-4.97-1.18.69.69 0 0 1-.2-.28c-.09-.24-.1-4.17-.02-4.46.03-.1.12-.24.2-.3l.15-.13H15.9c12.25 0 12.25 0 12.4.11Zm-25.25 7.5a.63.63 0 0 0-.3.21c-.1.16-.1.18-.09 4.64l.02 4.47.14.3c.18.4.52.73.9.92l.31.14H27.8l.3-.14c.4-.19.73-.52.91-.91l.15-.3.01-4.48c.02-4.45.01-4.48-.1-4.64-.12-.17-.42-.28-.65-.23-.2.04-.41.25-.45.46-.02.1-.04 2.06-.04 4.36 0 4.06 0 4.2-.1 4.37a.5.5 0 0 1-.32.23c-.28.08-22.9.08-23.18 0-.42-.12-.4.18-.42-4.7-.03-4.59-.02-4.48-.27-4.63a.8.8 0 0 0-.58-.07Zm14.11 1.22v1.28h-2.5v-2.56h2.5v1.28Z" fill="#646464"/></svg>
+                </a>
+                <a href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M23.55 4.62c-.4.35-.86.64-1.02.64-.37 0-9.56 10.1-9.81 10.77-.34.92-.94 4.45-.82 4.78.19.48 1.03.4 3.34-.31l2.06-.64 4.77-5.27c2.63-2.9 4.77-5.43 4.77-5.6 0-.19.2-.58.43-.88.59-.74.58-2.18-.01-2.93-1.05-1.33-2.57-1.56-3.7-.56Zm2.02 1.3c.5.26.55 1.02.08 1.2-.45.17-1.27-.64-1.1-1.09.16-.4.44-.43 1.02-.12ZM5.6 7.86C3.99 8.8 4 8.68 4 17.7c0 7.99 0 8.05.49 8.83.9 1.46 1 1.47 9.84 1.47 7.3 0 7.97-.03 8.66-.4 1.44-.77 1.6-1.32 1.67-6.12.04-2.34.02-4.48-.05-4.75-.15-.6-.88-.88-1.31-.52-.26.21-.32 1.07-.32 4.6 0 4.07-.02 4.38-.44 4.9l-.45.57h-7.78c-7.63 0-7.78 0-8.19-.45-.38-.42-.4-.88-.4-8.13 0-7.24.02-7.7.4-8.13.4-.43.61-.45 4.76-.45 2.39 0 4.5-.06 4.69-.13.44-.17.44-1.28 0-1.45-.2-.07-2.34-.13-4.78-.13-4.1 0-4.49.04-5.2.46Zm18.3.37.89.82-4.28 4.69c-4.19 4.58-4.3 4.69-5.53 5.05l-1.25.37.11-.46c.06-.26.18-.83.26-1.28.12-.66.9-1.64 4.33-5.42 2.3-2.53 4.28-4.6 4.38-4.6.11 0 .6.37 1.09.83Z" fill="#646464"/></svg>
+                </a>
+                <a href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M7.68 4.04c-.32.08-1.34.69-1.84 1.1a8.03 8.03 0 0 0-2.69 4.49c-.21 1.01-.2 2.62.03 3.76.24 1.17.58 2.15 1.14 3.26.43.88 3.4 5.98 3.85 6.63 1.96 2.81 4.64 4.53 7.35 4.7 1.71.1 3.21-.24 4.58-1.05.5-.3.64-.41.78-.65.17-.28.18-.31.18-.93 0-.56-.03-.7-.17-1.08a10.8 10.8 0 0 0-1.08-2.06c-.8-1.28-1.26-1.81-1.92-2.24a2.2 2.2 0 0 0-1.47-.4c-.55.03-.82.14-1.78.7-.58.35-.63.37-1 .37-.46 0-.9-.21-1.29-.6-.17-.19-.72-1.08-1.65-2.69l-1.5-2.61a2.62 2.62 0 0 1-.06-1.49c.13-.33.3-.49 1-.9l.57-.33.1.15c.15.25 6.23 5 6.7 5.24.37.19.44.2.9.2.4 0 .56-.03.82-.15.2-.1 1.88-1.37 4.53-3.46l4.29-3.35c.06-.04.07 1.06.07 5.4v5.43l-.14.15-.14.14h-3.01c-1.94 0-3.1.02-3.24.06a.6.6 0 0 0-.27 1l.17.19h3.27c3.23 0 3.28 0 3.55-.13.38-.17.77-.55.91-.89l.13-.29-.02-6.14-.02-6.15-.15-.27c-.2-.33-.54-.6-.92-.76-.28-.1-.59-.1-8.45-.1h-8.15l-.51-1a9.44 9.44 0 0 0-1.6-2.45c-.63-.66-1.3-.95-1.85-.8Zm.66 1.39c.45.33.95 1.04 1.6 2.27.52.98.75 1.66.76 2.18.01.68-.04.74-1.4 1.52-.88.5-1.24.95-1.44 1.81-.12.5-.08 1.3.08 1.76.1.3 2.83 5.05 3.22 5.62.36.53 1.1 1.03 1.76 1.2.45.12 1.12.12 1.47 0 .15-.05.62-.29 1.03-.53.9-.52 1.17-.58 1.6-.36.55.28 1.14.97 1.9 2.25.54.88.82 1.51.91 2.04.08.44.08.43-.62.82-1.66.92-3.92 1-5.74.22a10.44 10.44 0 0 1-4.35-3.78c-.38-.57-3.36-5.7-3.68-6.35-1.38-2.76-1.58-5.63-.54-7.79.34-.7.67-1.14 1.33-1.8a5.46 5.46 0 0 1 1.79-1.25c.05 0 .2.08.32.17Zm19.05 4.13c-.07.07-7.94 6.24-8.32 6.53-.37.28-.75.35-1.05.2-.1-.06-1.55-1.17-3.21-2.48l-3.14-2.45c-.11-.08-.1-.1.07-.44.15-.3.18-.45.2-.89l.04-.53h7.73c4.51 0 7.72.03 7.68.06Z" fill="#646464"/></svg>
 
-    <main>
+                </a>
+            </div>
+            
+            <div class="">
+                <img class="bg-primary" src="./assets/images/handsome-young-man.png" alt="handsome-man-loading">
+                <!-- Social icons part -->
+                <div class="flex items-center justify-around bg-black shadow-xl h-16">
+                    <a href="" class="bg-primary p-2 rounded-full"><svg width="10" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)"><path d="m8.72 9 .45-2.9H6.39V4.23c0-.8.39-1.57 1.63-1.57h1.26V.2S8.14 0 7.04 0C4.75 0 3.26 1.39 3.26 3.9v2.2H.7V9h2.55v7h3.13V9h2.33Z" fill="#C5C5C5"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h10v16H0z"/></clipPath></defs></svg></a>
 
-    </main>
+                    <a href="" class="bg-primary p-2 rounded-full">
+                        <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)"><path d="M4.13 14h-2.9V4.65h2.9V14ZM2.68 3.38A1.7 1.7 0 0 1 1.5.49a1.68 1.68 0 0 1 2.87 1.2c0 .92-.75 1.69-1.68 1.69ZM15 14h-2.9V9.45c0-1.08-.02-2.47-1.5-2.47-1.52 0-1.75 1.17-1.75 2.4V14h-2.9V4.65h2.79v1.28h.04a3.05 3.05 0 0 1 2.74-1.51c2.94 0 3.48 1.93 3.48 4.45V14Z" fill="#C5C5C5"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h16v16H0z"/></clipPath></defs></svg>
+                    </a>
 
-    <footer>
+                    <a href="" class="bg-primary p-2 rounded-full">
+                        <svg width="12" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)"><path d="M6.38.2C3.17.2 0 2.34 0 5.8 0 8 1.24 9.25 1.99 9.25c.3 0 .49-.86.49-1.1 0-.3-.75-.92-.75-2.13 0-2.5 1.92-4.29 4.4-4.29 2.12 0 3.7 1.21 3.7 3.43 0 1.66-.67 4.77-2.83 4.77-.78 0-1.44-.56-1.44-1.36 0-1.19.82-2.33.82-3.55 0-2.07-2.93-1.7-2.93.8 0 .53.07 1.11.3 1.6-.43 1.85-1.31 4.61-1.31 6.53 0 .59.08 1.17.14 1.76.1.12.05.1.21.05 1.58-2.16 1.52-2.58 2.24-5.4.38.73 1.37 1.12 2.16 1.12 3.32 0 4.81-3.23 4.81-6.15C12 2.23 9.32.2 6.37.2Z" fill="#C5C5C5"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h12v16H0z"/></clipPath></defs></svg>
+                    </a>
 
-    </footer>
+                    <a href="" class="bg-primary p-2 rounded-full">
+                        <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.76 3.3c-.55.24-1.15.4-1.78.48.65-.39 1.13-1 1.36-1.72a6.2 6.2 0 0 1-1.97.76 3.1 3.1 0 0 0-5.29 2.83 8.82 8.82 0 0 1-6.4-3.25 3.1 3.1 0 0 0 .96 4.15 3.1 3.1 0 0 1-1.4-.39v.04a3.1 3.1 0 0 0 2.49 3.05c-.46.12-.94.14-1.4.05a3.1 3.1 0 0 0 2.9 2.16 6.23 6.23 0 0 1-4.6 1.28 8.78 8.78 0 0 0 4.75 1.4c5.72 0 8.84-4.73 8.84-8.84v-.4c.6-.44 1.12-.98 1.54-1.6Z" fill="#C5C5C5"/></svg>
+                    </a>
+
+                    <a href="" class="bg-primary p-2 rounded-full">
+<svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.98.71C5.76.67 6 .67 8 .67c2 0 2.24 0 3.02.04a5.4 5.4 0 0 1 1.78.34c.5.19.94.47 1.3.85.38.36.66.8.85 1.3.18.46.3 1 .34 1.78.04.78.04 1.03.04 3.02 0 2 0 2.24-.04 3.02a5.38 5.38 0 0 1-.34 1.78 3.6 3.6 0 0 1-.85 1.3 3.6 3.6 0 0 1-1.3.85c-.46.18-1 .3-1.78.34-.78.04-1.03.04-3.02.04-2 0-2.24 0-3.02-.04a5.38 5.38 0 0 1-1.78-.34 3.6 3.6 0 0 1-1.3-.85 3.6 3.6 0 0 1-.85-1.3c-.18-.46-.3-1-.34-1.78C.67 10.24.67 10 .67 8c0-2 0-2.24.04-3.02a5.4 5.4 0 0 1 .34-1.78c.19-.5.48-.94.85-1.3.36-.38.8-.66 1.3-.85.46-.18 1-.3 1.78-.34Zm5.98 1.32C10.2 2 9.96 2 8 2s-2.19 0-2.96.04c-.72.03-1.1.15-1.37.25-.34.14-.58.3-.84.55-.24.24-.43.53-.55.84-.1.26-.22.65-.25 1.37C2 5.8 2 6.04 2 8s0 2.19.04 2.96c.03.72.15 1.1.25 1.37.12.31.3.6.55.84.24.24.53.43.84.55.26.1.65.22 1.37.25.77.04 1 .04 2.96.04s2.19 0 2.96-.04c.72-.03 1.1-.15 1.37-.25.34-.14.58-.3.84-.55.24-.24.43-.53.55-.84.1-.26.22-.65.25-1.37.04-.77.04-1 .04-2.96s0-2.19-.04-2.96a4.05 4.05 0 0 0-.25-1.37c-.14-.34-.3-.58-.55-.84a2.28 2.28 0 0 0-.84-.55c-.26-.1-.65-.22-1.37-.25Zm-3.9 8.23a2.45 2.45 0 1 0 1.88-4.52 2.45 2.45 0 0 0-1.88 4.52ZM5.33 5.33a3.77 3.77 0 1 1 5.34 5.34 3.77 3.77 0 0 1-5.34-5.34Zm7.28-.54a.9.9 0 1 0-1.23-1.3.9.9 0 0 0 1.23 1.3Z" fill="#C5C5C5"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h16v16H0z"/></clipPath></defs></svg>
+                    </a>
+
+                </div>
+            </div>
+
+        <!-- Introduction part -->
+         <div class="w-[720px] ml-12">
+            <h3 class="text-base bg-clip-text text-transparent bg-gradient-to-r from-[#F5BD4D] to-[#F89222]">INTRODUCTION</h3>
+            <h2 class="text-5xl my-3">I'm a Creative Developer &</h2>
+            <h2 class="text-5xl">UI/UX Design Expert</h2>
+            <p class="mt-4 mb-8 whitespace-normal">24 years &nbsp;  /  &nbsp; Robert Smith &nbsp;  / &nbsp;  UK London</p>
+            <p class="font-medium text-[#C6C6C6]">Prolific, full stack web developer with a passion for metrics and beating former
+                "best-yets. Prototyped 25 new product features per year for Flexor, Inc.
+                Decreased rework by 22% and costs by 15%. Consistently receive high
+                user experience scores for all web development projects, including a
+                55% increase for Flexor, Inc. Passionate about building world class web
+                applications. One of my sites received a 2020 Webby for Best 
+                Navigation and Structure.
+            </p>
+            <button class="py-3 px-6 mt-10 bg-gradient-to-r from-[#F5BD4D] to-[#F89222] rounded-full"><a href="" class="flex items-center gap-3"><span>Download CV</span> <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"><path d="M12 15V3m0 12-4-4m4 4 4-4M2 17l.62 2.48A2 2 0 0 0 4.56 21h14.88a2 2 0 0 0 1.94-1.52L22 17" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a></button>
+         </div>
+         <!-- Copyright Area -->
+         <div class="flex">
+            <!-- <p class="font-normal text-base text-gray-400 rotate-90 translate-x-16 -translate-y-2/4">© design by themefisher developed by gethugothemes</p> -->
+            <div class="flex flex-col justify-end items-center h-96 w-24 bg-primary">
+                <p class="p-2 w-8 h-8 mt-3 text-sm bg-[#343434] rounded-full">Fr</p>
+                <p class="p-2 w-8 h-8 mt-3 text-sm bg-gradient-to-r from-[#F5BD4D] to-[#F89222] rounded-full">En</p>
+             </div>
+         </div>
+        </nav>    
+        </header>
+
+        <!-- Main -->
+        <main class="flex flex-col w-3/5 mx-auto mr-4 container">
+            <!-- Resume Section  -->
+             <section>
+                <h2 class="text-5xl mt-16">Resume</h2>
+                <!-- Education  -->
+                <div class="flex gap-3 items-center my-11">
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none"><rect width="32" height="32" rx="4" fill="#333"/><path fill-rule="evenodd" clip-rule="evenodd" d="M10.6 8.92c-4.09 1.48-5.3 1.94-5.4 2.03a.7.7 0 0 0-.19.61c.06.34.14.38 2.29 1.17l1.97.73v2.19c0 1.2.01 2.25.03 2.33.04.2.52.7.96.99 1.45.96 3.46 1.4 6.11 1.34 1.94-.05 3.34-.33 4.57-.92a4.83 4.83 0 0 0 1.6-1.14l.12-.15.02-2.3.02-2.29.78-.28.8-.28c.02 0 .03 1.24.03 2.74v2.75l-.94.95c-1.34 1.34-1.34 1.22 0 2.56l.94.95.01.85c.02.77.02.85.1.97.3.37.82.37 1.1 0 .09-.12.1-.2.1-.97l.02-.85.9-.9c.5-.5.93-.97.97-1.05a.6.6 0 0 0 0-.56c-.04-.07-.48-.55-.97-1.04l-.9-.9v-3l.02-3 .6-.23c.75-.28.78-.3.88-.53a.6.6 0 0 0-.1-.7c-.13-.14-.62-.33-5.45-2.08C17.2 7.32 16.25 7 16.08 7c-.16 0-1.48.46-5.48 1.92Zm9.74.95 4.2 1.53c.02.02-1.9.73-4.27 1.58l-4.3 1.55-4.2-1.55a55.54 55.54 0 0 1-4.1-1.58c.33-.15 8.35-3.03 8.42-3.03.04 0 1.96.67 4.25 1.5Zm-7.14 5.05c2.04.76 2.62.96 2.78.96.14 0 .96-.28 2.77-.94a315 315 0 0 1 2.59-.93c.01 0 .02.8.02 1.78v1.79l-.16.13c-.76.63-2.28 1.1-4.03 1.24-.76.07-2.33.03-3-.06a7.48 7.48 0 0 1-3.35-1.13l-.23-.18v-1.8c0-1 .01-1.81.02-1.81l2.6.95Zm12.28 5.27.49.48-.5.5-.5.5-.49-.5-.5-.5.49-.48c.26-.27.5-.49.5-.49.02 0 .25.22.51.49Z" fill="url(#a)"/><defs><linearGradient id="a" x1="5" y1="11.9929" x2="27.5787" y2="11.8503" gradientUnits="userSpaceOnUse"><stop stop-color="#F5BD4D"/><stop offset="1" stop-color="#F89222"/></linearGradient></defs></svg>
+                    </span>
+                    <h3 class="text-2xl">Education</h3>
+                </div>
+
+                <div class="flex">
+                    <hr class="w-2 h-[425px] ml-3  border-2 border-solid border-gray-500 rounded-full">
+                    <div>
+                        <div class="flex items-center ">
+                            <span class="-translate-x-[14px] translate-y-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="17" viewBox="0 0 23 17" fill="none">
+                                    <path d="M2.02508 8.31071L11.7105 1.33185L21.221 8.29597L11.5148 15.0998L2.02508 8.31071Z" stroke="#646464" stroke-width="2"/>
+                                </svg>
+                            </span>
+                            <p class="p-2 border border-solid border-gray-500 rounded-md">2016-2020</p>
+                        </div>
+                        <div class="w-4/5 bg-primary ml-6 mt-3 py-6 px-5 border border-solid border-gray-500 rounded-lg">
+                            <h4 class="text-xl bg-gradient-to-r from-[#F5BD4D] to-[#F89222] bg-clip-text text-transparent">Harvard University</h4>
+                            <p class="text-gray-400 text-sm font-normal mt-2 mb-4">B.A. and M.S., Computer Science</p>
+                            <hr class="w-5/6 h-0.5 bg-[#222222] mb-4">
+                            <p class="font-normal text-base">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aut commodi earum
+                                eligendi ipsum, laborum maiores mollitia, optio quam quis rerum totam voluptas.</p>
+                        </div>
+                        <!-- Helwan University -->
+                        <div class="flex items-center mt-7 mb-3">
+                            <span class="-translate-x-[14px] translate-y-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="17" viewBox="0 0 23 17" fill="none">
+                                    <path d="M2.02508 8.31071L11.7105 1.33185L21.221 8.29597L11.5148 15.0998L2.02508 8.31071Z" stroke="#646464" stroke-width="2"/>
+                                </svg>
+                            </span>
+                            <p class="p-2 border border-solid border-gray-500 rounded-md">2014-2016</p>
+                        </div>
+                        <div class="w-4/5 bg-primary ml-6 mt-3 py-6 px-5 border border-solid border-gray-500 rounded-lg">
+                            <h4 class="text-xl bg-gradient-to-r from-[#F5BD4D] to-[#F89222] bg-clip-text text-transparent">Helwan University</h4>
+                            <p class="text-gray-400 text-sm font-normal mt-2 mb-4">Bachelor Degree</p>
+                            <hr class="w-5/6 h-0.5 bg-[#222222] mb-4">
+                            <p class="font-normal text-base">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aut commodi earum
+                                eligendi ipsum, laborum maiores mollitia, optio quam quis rerum totam voluptas.</p>
+                        </div>
+                        
+                    </div>
+
+                </div>
+
+                <!-- Work History -->
+                <div class="flex gap-3 items-center my-20">
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none"><rect width="32" height="32" rx="4" fill="#333"/><path fill-rule="evenodd" clip-rule="evenodd" d="M10.6 8.92c-4.09 1.48-5.3 1.94-5.4 2.03a.7.7 0 0 0-.19.61c.06.34.14.38 2.29 1.17l1.97.73v2.19c0 1.2.01 2.25.03 2.33.04.2.52.7.96.99 1.45.96 3.46 1.4 6.11 1.34 1.94-.05 3.34-.33 4.57-.92a4.83 4.83 0 0 0 1.6-1.14l.12-.15.02-2.3.02-2.29.78-.28.8-.28c.02 0 .03 1.24.03 2.74v2.75l-.94.95c-1.34 1.34-1.34 1.22 0 2.56l.94.95.01.85c.02.77.02.85.1.97.3.37.82.37 1.1 0 .09-.12.1-.2.1-.97l.02-.85.9-.9c.5-.5.93-.97.97-1.05a.6.6 0 0 0 0-.56c-.04-.07-.48-.55-.97-1.04l-.9-.9v-3l.02-3 .6-.23c.75-.28.78-.3.88-.53a.6.6 0 0 0-.1-.7c-.13-.14-.62-.33-5.45-2.08C17.2 7.32 16.25 7 16.08 7c-.16 0-1.48.46-5.48 1.92Zm9.74.95 4.2 1.53c.02.02-1.9.73-4.27 1.58l-4.3 1.55-4.2-1.55a55.54 55.54 0 0 1-4.1-1.58c.33-.15 8.35-3.03 8.42-3.03.04 0 1.96.67 4.25 1.5Zm-7.14 5.05c2.04.76 2.62.96 2.78.96.14 0 .96-.28 2.77-.94a315 315 0 0 1 2.59-.93c.01 0 .02.8.02 1.78v1.79l-.16.13c-.76.63-2.28 1.1-4.03 1.24-.76.07-2.33.03-3-.06a7.48 7.48 0 0 1-3.35-1.13l-.23-.18v-1.8c0-1 .01-1.81.02-1.81l2.6.95Zm12.28 5.27.49.48-.5.5-.5.5-.49-.5-.5-.5.49-.48c.26-.27.5-.49.5-.49.02 0 .25.22.51.49Z" fill="url(#a)"/><defs><linearGradient id="a" x1="5" y1="11.9929" x2="27.5787" y2="11.8503" gradientUnits="userSpaceOnUse"><stop stop-color="#F5BD4D"/><stop offset="1" stop-color="#F89222"/></linearGradient></defs></svg>
+                    </span>
+                    <h3 class="text-2xl">Work History</h3>
+                </div>
+
+                <div class="flex">
+                    <hr class="w-2 h-[425px] ml-3  border-2 border-solid border-gray-500 rounded-full">
+                    <div>
+                        <div class="flex items-center ">
+                            <span class="-translate-x-[14px] translate-y-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="17" viewBox="0 0 23 17" fill="none">
+                                    <path d="M2.02508 8.31071L11.7105 1.33185L21.221 8.29597L11.5148 15.0998L2.02508 8.31071Z" stroke="#646464" stroke-width="2"/>
+                                </svg>
+                            </span>
+                            <p class="p-2 border border-solid border-gray-500 rounded-md">2016-2022</p>
+                        </div>
+                        <div class="w-4/5 bg-primary ml-6 mt-3 py-6 px-5 border border-solid border-gray-500 rounded-lg">
+                            <h4 class="text-xl bg-gradient-to-r from-[#F5BD4D] to-[#F89222] bg-clip-text text-transparent">UI/UX design</h4>
+                            <p class="text-gray-400 text-sm font-normal mt-2 mb-4">Web site design</p>
+                            <hr class="w-5/6 h-0.5 bg-[#222222] mb-4">
+                            <p class="font-normal text-base">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aut commodi earum
+                                eligendi ipsum, laborum maiores mollitia, optio quam quis rerum totam voluptas.</p>
+                        </div>
+                        <!--Junior Web  designers-->
+                        <div class="flex items-center mt-7 mb-3">
+                            <span class="-translate-x-[14px] translate-y-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="17" viewBox="0 0 23 17" fill="none">
+                                    <path d="M2.02508 8.31071L11.7105 1.33185L21.221 8.29597L11.5148 15.0998L2.02508 8.31071Z" stroke="#646464" stroke-width="2"/>
+                                </svg>
+                            </span>
+                            <p class="p-2 border border-solid border-gray-500 rounded-md">2012-2016</p>
+                        </div>
+                        <div class="w-4/5 bg-primary ml-6 mt-3 py-6 px-5 border border-solid border-gray-500 rounded-lg">
+                            <h4 class="text-xl bg-gradient-to-r from-[#F5BD4D] to-[#F89222] bg-clip-text text-transparent">Junior Web  designers</h4>
+                            <p class="text-gray-400 text-sm font-normal mt-2 mb-4">Product designer</p>
+                            <hr class="w-5/6 h-0.5 bg-[#222222] mb-4">
+                            <p class="font-normal text-base">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aut commodi earum
+                                eligendi ipsum, laborum maiores mollitia, optio quam quis rerum totam voluptas.</p>
+                        </div>
+                        
+                    </div>
+
+                </div>
+
+             </section>
+
+             <!-- Skills Section -->
+            <section>
+                <h2 class="text-5xl mt-28 mb-8">Skills</h2>
+                <div>
+                    <!-- Progressbar-1 -->
+                    <div class="flex justify-between font-medium w-5/6 mb-2">
+                        <p class="text-2xl">UI/UX Design</p>
+                        <p class="text-xl bg-gradient-to-r from-[#F5BD4D] to-[#F89222] bg-clip-text text-transparent">95%</p>  
+                    </div>
+                    <div class="w-5/6 h-4 bg-gradient-to-r from-[#F5BD4D4D] to-[#F892224D] rounded-3xl">
+                        <div class="w-11/12 h-4 rounded-3xl bg-gradient-to-r from-[#F5BD4D] to-[#F89222]"></div>
+                    </div>
+                    <!-- Progressbar-2 -->
+                    <div class="flex justify-between font-medium w-5/6 mb-2">
+                        <p class="text-2xl">UI/UX Design</p>
+                        <p class="text-xl bg-gradient-to-r from-[#F5BD4D] to-[#F89222] bg-clip-text text-transparent">95%</p>  
+                    </div>
+                    <div class="w-5/6 h-4 bg-gradient-to-r from-[#F5BD4D4D] to-[#F892224D] rounded-3xl">
+                        <div class="w-11/12 h-4 rounded-3xl bg-gradient-to-r from-[#F5BD4D] to-[#F89222]"></div>
+                    </div>
+                    <!-- Progressbar-3 -->
+                    <div class="flex justify-between font-medium w-5/6 mb-2">
+                        <p class="text-2xl">UI/UX Design</p>
+                        <p class="text-xl bg-gradient-to-r from-[#F5BD4D] to-[#F89222] bg-clip-text text-transparent">95%</p>  
+                    </div>
+                    <div class="w-5/6 h-4 bg-gradient-to-r from-[#F5BD4D4D] to-[#F892224D] rounded-3xl">
+                        <div class="w-11/12 h-4 rounded-3xl bg-gradient-to-r from-[#F5BD4D] to-[#F89222]"></div>
+                    </div>
+                    <!-- Progressbar-4 -->
+                    <div class="flex justify-between font-medium w-5/6 mb-2">
+                        <p class="text-2xl">UI/UX Design</p>
+                        <p class="text-xl bg-gradient-to-r from-[#F5BD4D] to-[#F89222] bg-clip-text text-transparent">95%</p>  
+                    </div>
+                    <div class="w-5/6 h-4 bg-gradient-to-r from-[#F5BD4D4D] to-[#F892224D] rounded-3xl">
+                        <div class="w-11/12 h-4 rounded-3xl bg-gradient-to-r from-[#F5BD4D] to-[#F89222]"></div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+    
+        <footer class="container">
+    
+        </footer>
+    </div>
+    
 </body>
 </html>
